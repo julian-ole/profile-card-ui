@@ -38,6 +38,28 @@ export default {
           icon: "linkedin",
         },
       ],
+      experience: [
+        {
+          year: "2014",
+          title: "Senior Front-end Developer at JotForm",
+          description: "Disrupt stumptown retro everyday carry unicorn.",
+        },
+        {
+          year: "2016",
+          title: "Middle Front-end Developer at JotForm",
+          description: "Disrupt stumptown retro everyday carry unicorn.",
+        },
+        {
+          year: "2018",
+          title: "Junior Front-end Developer at JotForm",
+          description: "Disrupt stumptown retro everyday carry unicorn.",
+        },
+        {
+          year: "2020",
+          title: "Front-end Developer at JotForm",
+          description: "Disrupt stumptown retro everyday carry unicorn.",
+        },
+      ],
     },
   }),
 };

@@ -11,7 +11,10 @@
         :description="profile.description"
         :socials="profile.socials"
       />
-      <app-experience :active="activeTab === 'experience'" />
+      <app-experience
+        :active="activeTab === 'experience'"
+        :experience="profile.experience"
+      />
       <app-contact :active="activeTab === 'contact'" />
       <app-navigation @switch="onTabSwitch" />
     </div>

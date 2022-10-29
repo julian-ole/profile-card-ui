@@ -2,34 +2,18 @@
   <div :class="['card-section', { 'is-active': active }]" id="experience">
     <div class="card-content">
       <div class="card-subtitle">WORK EXPERIENCE</div>
-      <div class="card-timeline">
-        <div class="card-item" data-year="2014">
-          <div class="card-item-title">
-            Front-end Developer at <span>JotForm</span>
-          </div>
-          <div class="card-item-desc">
-            Disrupt stumptown retro everyday carry unicorn.
-          </div>
-        </div>
-        <div class="card-item" data-year="2016">
-          <div class="card-item-title">UI Developer at <span>GitHub</span></div>
-          <div class="card-item-desc">
-            Developed new conversion funnels and disrupt.
-          </div>
-        </div>
-        <div class="card-item" data-year="2018">
-          <div class="card-item-title">Illustrator at <span>Google</span></div>
-          <div class="card-item-desc">Onboarding illustrations for App.</div>
-        </div>
-        <div class="card-item" data-year="2020">
-          <div class="card-item-title">
-            Full-Stack Developer at <span>CodePen</span>
-          </div>
-          <div class="card-item-desc">
-            Responsible for the encomposing brand expreience.
-          </div>
+      <div v-if="hasExperience" class="card-timeline">
+        <div
+          v-for="(item, index) in experience"
+          :key="index"
+          class="card-item"
+          :data-year="item.year"
+        >
+          <div class="card-item-title">{{ item.title }}</div>
+          <div class="card-item-desc">{{ item.description }}</div>
         </div>
       </div>
+      <div v-else>Nothing yet.</div>
     </div>
   </div>
 </template>
@@ -41,6 +25,82 @@ export default {
       type: Boolean,
       default: false,
     },
+    experience: {
+      type: Array,
+      default: () => [],
+    },
+  },
+  computed: {
+    hasExperience() {
+      return !!this.experience.length;
+    },
   },
 };
 </script>
+
+<style lang="scss">
+.card-timeline {
+  margin-top: 30px;
+  position: relative;
+
+  &:after {
+    background: linear-gradient(
+      to top,
+      rgba(134, 214, 243, 0) 0%,
+      rgba(81, 106, 204, 1) 100%
+    );
+    content: "";
+    left: 42px;
+    width: 2px;
+    top: 0;
+    height: 100%;
+    position: absolute;
+    content: "";
+  }
+
+  .card-item {
+    position: relative;
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    z-index: 1;
+    &:last-child {
+      padding-bottom: 5px;
+    }
+
+    &:after {
+      content: attr(data-year);
+      width: 10px;
+      position: absolute;
+      top: 0;
+      left: 37px;
+      width: 8px;
+      height: 8px;
+      line-height: 0.6;
+      border: 2px solid #fff;
+      font-size: 11px;
+      text-indent: -35px;
+      border-radius: 50%;
+      color: rgba(#868686, 0.7);
+      background: linear-gradient(
+        to bottom,
+        lighten(#516acc, 20%) 0%,
+        #516acc 100%
+      );
+    }
+  }
+
+  .card-item-title {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .card-item-desc {
+    font-size: 13px;
+    color: #6f6f7b;
+    line-height: 1.5;
+    font-family: "DM Sans", sans-serif;
+  }
+}
+</style>
