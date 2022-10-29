@@ -15,7 +15,10 @@
         :active="activeTab === 'experience'"
         :experience="profile.experience"
       />
-      <app-contact :active="activeTab === 'contact'" />
+      <app-contact
+        :active="activeTab === 'contact'"
+        :contacts="profile.contacts"
+      />
       <app-navigation @switch="onTabSwitch" />
     </div>
   </div>
