@@ -1,5 +1,5 @@
 <template>
-  <div class="card-section is-active" id="about">
+  <div :class="['card-section', { 'is-active': active }]" id="about">
     <div class="card-content">
       <div class="card-subtitle">ABOUT</div>
       <p class="card-desc">
@@ -18,6 +18,10 @@ export default {
     AppSocial,
   },
   props: {
+    active: {
+      type: Boolean,
+      default: false,
+    },
     description: {
       type: String,
       required: true,

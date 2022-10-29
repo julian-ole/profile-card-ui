@@ -1,5 +1,5 @@
 <template>
-  <div class="card" data-state="#about">
+  <div :class="classesCard" :data-state="activeTab">
     <app-header
       :avatar="profile.avatar"
       :full-name="profile.fullName"
@@ -7,12 +7,13 @@
     />
     <div class="card-main">
       <app-about
+        :active="activeTab === 'about'"
         :description="profile.description"
         :socials="profile.socials"
       />
-      <app-experience />
-      <app-contact />
-      <app-navigation />
+      <app-experience :active="activeTab === 'experience'" />
+      <app-contact :active="activeTab === 'contact'" />
+      <app-navigation @switch="onTabSwitch" />
     </div>
   </div>
 </template>
@@ -38,6 +39,25 @@ export default {
       required: true,
     },
   },
+  data() {
+    return {
+      activeTab: "about",
+    };
+  },
+  computed: {
+    classesCard() {
+      return {
+        card: true,
+        "is-active":
+          this.activeTab === "experience" || this.activeTab === "contact",
+      };
+    },
+  },
+  methods: {
+    onTabSwitch(section) {
+      this.activeTab = section;
+    },
+  },
 };
 </script>
 
@@ -56,7 +76,7 @@ export default {
   border-radius: 10px;
   box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
 
-  &[data-state="#about"] {
+  &[data-state="about"] {
     height: 450px;
 
     .card-main {
@@ -64,11 +84,11 @@ export default {
     }
   }
 
-  &[data-state="#experience"] {
+  &[data-state="experience"] {
     height: 550px;
   }
 
-  &[data-state="#contact"] {
+  &[data-state="contact"] {
     height: 430px;
   }
 
@@ -114,6 +134,25 @@ export default {
       letter-spacing: 1px;
       font-size: 10px;
     }
+  }
+
+  .card-section {
+    display: none;
+
+    &.is-active {
+      display: block;
+      animation: fadeIn 0.6s both;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translatey(40px);
+  }
+  100% {
+    opacity: 1;
   }
 }
 </style>

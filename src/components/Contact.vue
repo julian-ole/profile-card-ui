@@ -1,5 +1,5 @@
 <template>
-  <div class="card-section" id="contact">
+  <div :class="['card-section', { 'is-active': active }]" id="contact">
     <div class="card-content">
       <div class="card-subtitle">CONTACT</div>
       <div class="card-contact-wrapper">
@@ -55,3 +55,14 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    active: {
+      type: Boolean,
+      default: false,
+    },
+  },
+};
+</script>
