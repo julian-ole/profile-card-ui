@@ -43,7 +43,7 @@ export default {
 <style lang="scss">
 .card-buttons {
   display: flex;
-  background-color: #fff;
+  background-color: #eee3d3;
   margin-top: auto;
   position: sticky;
   bottom: 0;
@@ -59,7 +59,7 @@ export default {
     cursor: pointer;
     color: #5c5c6d;
     transition: 0.3s;
-    font-family: "Jost", sans-serif;
+    font-family: Copperplate, Papyrus, fantasy;
     font-weight: 500;
     outline: 0;
     border-bottom: 3px solid transparent;
@@ -67,12 +67,13 @@ export default {
     &.is-active,
     &:hover {
       color: #2b2c48;
-      border-bottom: 3px solid #8a84ff;
+      border-bottom: 3px solid rgb(80 97 39);
+      border-width: 5px;
       background: linear-gradient(
         to bottom,
         rgba(127, 199, 231, 0) 0%,
         rgba(207, 204, 255, 0.2) 44%,
-        rgba(211, 226, 255, 0.4) 100%
+        rgb(79 96 39 / 49%) 100%
       );
     }
   }

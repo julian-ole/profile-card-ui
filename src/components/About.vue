@@ -52,10 +52,10 @@ export default {
 
 .card-desc {
   line-height: 1.6;
-  color: #636b6f;
-  font-size: 14px;
+  color: rgb(11 53 48);
+  font-size: 15px;
   margin: 0;
   font-weight: 400;
-  font-family: "DM Sans", sans-serif;
+  font-family: Copperplate, Papyrus, fantasy;
 }
 </style>

@@ -15,7 +15,7 @@
           <img :src="require(`../assets/icons/email.svg`)" />
           {{ contacts.email }}
         </div>
-        <button class="contact-me">WORK TOGETHER</button>
+        <button class="contact-me">CONTACT ME VIA TELEGRAM</button>
       </div>
     </div>
   </div>
@@ -45,8 +45,8 @@ export default {
   display: flex;
   align-items: center;
   font-size: 13px;
-  color: #6f6f7b;
-  font-family: "DM Sans", sans-serif;
+  color: #2b2c48;
+  font-family: Copperplate, Papyrus, fantasy;
   line-height: 1.6;
   cursor: pointer;
 
@@ -68,21 +68,17 @@ export default {
 .contact-me {
   border: 0;
   outline: none;
-  background: linear-gradient(
-    to right,
-    rgba(83, 200, 239, 0.8) 0%,
-    rgba(81, 106, 204, 0.8) 96%
-  );
+  background: linear-gradient(to right, rgb(70 85 27) 0%, rgb(199 186 163) 96%);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
   color: #fff;
   padding: 12px 16px;
   width: 100%;
   border-radius: 5px;
-  margin-top: 25px;
+  margin-top: 45px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
-  font-family: "Jost", sans-serif;
+  font-family: Copperplate, Papyrus, fantasy;
   transition: 0.3s;
 }
 </style>

@@ -30,7 +30,7 @@ export default {
 .card-header {
   position: relative;
   display: flex;
-  height: 200px;
+  height: 250px;
   flex-shrink: 0;
   width: 100%;
   transition: 0.3s;
@@ -43,22 +43,22 @@ export default {
     width: 100%;
     height: 100%;
     position: absolute;
-    height: 160px;
+    height: 230px;
     top: -20%;
     left: 0;
     will-change: top;
     background-size: cover;
     background-position: center;
-    background-image: url("https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
-    filter: blur(30px);
+    background-image: url("../../public/images/avatar.jpg");
+    filter: blur(20px);
     transform: scale(1.2);
     transition: 0.5s;
   }
 
   &__avatar {
-    width: 100px;
-    height: 100px;
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0px 25px rgb(211 198 180);
     border-radius: 50%;
     object-position: center;
     object-fit: cover;

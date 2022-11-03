@@ -1,0 +1,63 @@
+{
+  "profile": {
+    "avatar": "/images/avatar.jpg",
+    "fullName": "Julia Tremilia",
+    "jobTitle": "QA Engineer",
+    "card-subtitle": "ABOUT",
+    "description": "I stay in Bali. I’m a beginner in QA, so I test real projects with UTest platform and looking for permanent job in QA specialty. I am a creative person with a practical mind. Completed a risk management course to achieve better overall goals at a future job.",
+    "socials": [
+      {
+        "name": "Facebook",
+        "link": "https://www.facebook.com/julie.olegovna",
+        "icon": "facebook"
+      },
+      {
+        "name": "Github",
+        "link": "https://github.com/julian-ole",
+        "icon": "github"
+      },
+      {
+        "name": "Instagram",
+        "link": "https://www.instagram.com/kot_julian/",
+        "icon": "instagram"
+      },
+      {
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/olegovna/",
+        "icon": "linkedin"
+      }
+    ],
+    "experience": [
+      {
+        "year": "2017",
+        "title": "Hostess",
+        "description": "Participation in exhibitions, festivals, conferences, forums (Leaders of Russia, SPIEF, Sberbank conference)."
+      },
+      {
+        "year": "2018",
+        "title": "Museum guide in \"FIFA2018 Museum\"",
+        "description": "Making presentation of exhibits, guid tours in Russian and English."
+      },
+      {
+        "year": "2019",
+        "title": "Hotel animation",
+        "description": "Sports and children's animation in the hotels of Egypt \"Aladdin Beach Resort\" and \"Alf Leila wa Leila\", guest contact, entertainment program."
+      },
+      {
+        "year": "2020",
+        "title": "Advertising model",
+        "description": "Advertising shooting for hotels, tourist locations, clothing brands in Egypt."
+      },
+      {
+        "year": "2022",
+        "title": "QA engineer",
+        "description": "studing testing basis, freelance work with Utest"
+      }
+    ],
+    "contacts": {
+      "address": "Bali, Indonesia",
+      "phone": "+20 111 8085718",
+      "email": "yula22trem@yahoo.com"
+    }
+  }
+}

@@ -47,7 +47,7 @@ export default {
     background: linear-gradient(
       to top,
       rgba(134, 214, 243, 0) 0%,
-      rgba(81, 106, 204, 1) 100%
+      rgb(79 96 39)
     );
     content: "";
     left: 42px;
@@ -73,20 +73,16 @@ export default {
       width: 10px;
       position: absolute;
       top: 0;
-      left: 37px;
-      width: 8px;
+      left: 36px;
+      width: 9px;
       height: 8px;
       line-height: 0.6;
       border: 2px solid #fff;
-      font-size: 11px;
-      text-indent: -35px;
+      font-size: 14px;
+      text-indent: -44px;
       border-radius: 50%;
-      color: rgba(#868686, 0.7);
-      background: linear-gradient(
-        to bottom,
-        lighten(#516acc, 20%) 0%,
-        #516acc 100%
-      );
+      color: rgb(43 44 72 / 66%);
+      background: linear-gradient(to bottom, #ffffff 0%, #4f6027 100%);
     }
   }
 
@@ -98,9 +94,9 @@ export default {
 
   .card-item-desc {
     font-size: 13px;
-    color: #6f6f7b;
+    color: #2b2c48;
     line-height: 1.5;
-    font-family: "DM Sans", sans-serif;
+    font-family: Copperplate, Papyrus, fantasy;
   }
 }
 </style>

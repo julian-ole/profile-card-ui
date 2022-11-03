@@ -1,7 +1,15 @@
 <template>
   <div class="card-social">
-    <a v-for="social in socials" :key="social.name" :href="social.link">
-      <img :src="require(`../assets/icons/${social.icon}.svg`)" />
+    <a
+      v-for="social in socials"
+      :key="social.name"
+      :href="social.link"
+      target="_blank"
+    >
+      <img
+        :src="require(`../assets/icons/${social.icon}.svg`)"
+        :style="`${social.icon === 'github' ? 'width: 20px' : null}`"
+      />
     </a>
   </div>
 </template>

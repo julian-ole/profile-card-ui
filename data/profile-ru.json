@@ -1,0 +1,63 @@
+{
+  "profile": {
+    "avatar": "/images/avatar.jpg",
+    "fullName": "Юлия Тремиля",
+    "jobTitle": "QA Engineer",
+    "card-subtitle": "О СЕБЕ",
+    "description": " Живу на Бали. Я Junior QA специалист, со знанием английского языка.  Тестирую реальные проекты на платформе Utest, ищу постоянную работу в качестве QA инженера.  Я человек с творческими наклонностями и практическим складом ума. Прошла курс риск менеджмента для достижения лучших общих целей  на будущем месте работы.",
+    "socials": [
+      {
+        "name": "Facebook",
+        "link": "https://www.facebook.com/julie.olegovna",
+        "icon": "facebook"
+      },
+      {
+        "name": "Github",
+        "link": "https://github.com/julian-ole",
+        "icon": "github"
+      },
+      {
+        "name": "Instagram",
+        "link": "https://www.instagram.com/kot_julian/",
+        "icon": "instagram"
+      },
+      {
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/olegovna/",
+        "icon": "linkedin"
+      }
+    ],
+    "experience": [
+      {
+        "year": "2017",
+        "title": "Хостес",
+        "description": "Участие в выставках, фестивалях, конференциях, форумах (Лидеры России, ПМЭФ, конференция Сбербанк). "
+      },
+      {
+        "year": "2018",
+        "title": "Гид в музее \"FIFA 2018\"",
+        "description": "Презентация экспонатов, проведение экскурсий на русском и английском языках"
+      },
+      {
+        "year": "2019",
+        "title": "Отельный аниматор",
+        "description": "Спортивная и детская анимация в отелях Египта \"Aladdin Beach Resort \" и \"Alf Leila wa Leila\", общение с гостями, проведение развлекательной программы."
+      },
+      {
+        "year": "2020",
+        "title": "Рекламная модель",
+        "description": "Рекламная съемка для отелей, тур.локаций, брендов одежды Египта."
+      },
+      {
+        "year": "2022",
+        "title": "Инженер по качеству ПО",
+        "description": "Изучение основ тестирования, работа в Utest на фрилансе"
+      }
+    ],
+    "contacts": {
+      "address": "Бали, Индонезия",
+      "phone": "+20 111 8085718",
+      "email": "yula22trem@yahoo.com"
+    }
+  }
+}

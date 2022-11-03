@@ -69,13 +69,13 @@ export default {
 
 <style lang="scss">
 .card {
-  max-width: 340px;
+  width: 360px;
   margin: auto;
   overflow-y: auto;
   position: relative;
   z-index: 1;
   overflow-x: hidden;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(202 189 171 / 86%);
   display: flex;
   transition: 0.3s;
   flex-direction: column;
@@ -83,7 +83,7 @@ export default {
   box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
 
   &[data-state="about"] {
-    height: 450px;
+    height: 500px;
 
     .card-main {
       padding-top: 0;
