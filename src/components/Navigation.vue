@@ -66,15 +66,10 @@ export default {
 
     &.is-active,
     &:hover {
-      color: #2b2c48;
+      color: #241f1e;
       border-bottom: 3px solid rgb(80 97 39);
       border-width: 5px;
-      background: linear-gradient(
-        to bottom,
-        rgba(127, 199, 231, 0) 0%,
-        rgba(207, 204, 255, 0.2) 44%,
-        rgb(79 96 39 / 49%) 100%
-      );
+      background: rgba(127, 199, 231, 0);
     }
   }
 }

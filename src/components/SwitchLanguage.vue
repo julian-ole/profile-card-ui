@@ -9,10 +9,18 @@ export default {
       lang: "RU",
     };
   },
+  created() {
+    this.lang = window.localStorage.getItem("lang") || "RU";
+  },
+  watch: {
+    lang(value) {
+      this.$emit("switch-language", value);
+    },
+  },
   methods: {
     onClick() {
       this.lang = this.lang === "EN" ? "RU" : "EN";
-      this.$emit("switch-language", this.lang);
+      window.localStorage.setItem("lang", this.lang);
     },
   },
 };

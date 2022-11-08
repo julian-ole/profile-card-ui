@@ -77,12 +77,12 @@ export default {
       width: 9px;
       height: 8px;
       line-height: 0.6;
-      border: 2px solid #fff;
+      border: 2px solid #898d7e;
       font-size: 14px;
       text-indent: -44px;
       border-radius: 50%;
       color: rgb(43 44 72 / 66%);
-      background: linear-gradient(to bottom, #ffffff 0%, #4f6027 100%);
+      background: #4f6027;
     }
   }
 

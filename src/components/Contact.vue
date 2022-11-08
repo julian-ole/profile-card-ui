@@ -68,7 +68,7 @@ export default {
 .contact-me {
   border: 0;
   outline: none;
-  background: linear-gradient(to right, rgb(70 85 27) 0%, rgb(199 186 163) 96%);
+  background: rgb(70 85 27) 0%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
   color: #fff;
   padding: 12px 16px;

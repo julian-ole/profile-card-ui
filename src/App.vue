@@ -34,7 +34,7 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
 
 body {
-  color: #2b2c48;
+  color: #241f1e;
   font-family: Copperplate, Papyrus, fantasy;
   background-image: url("../public/images/bg.jpg");
 
